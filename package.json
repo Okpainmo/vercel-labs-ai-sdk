@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "turbo build",
+    "build": "node api.js && turbo build",
     "changeset": "changeset",
     "clean": "turbo clean",
-    "dev": "turbo dev --no-cache --continue",
+    "dev": "node api.js && turbo dev --no-cache --continue",
     "lint": "turbo lint",
     "prepare": "husky install",
     "prettier-check": "prettier --check \"**/*.{js,ts,tsx,md,mdx}\"",
